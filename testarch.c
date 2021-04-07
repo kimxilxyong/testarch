@@ -36,4 +36,8 @@ int main(void) {
   printf("UINTPTR_MAX is WTF!\n");
 #endif
   
+  int v = 11 //**/ 11
+          + 88;
+  printf("C%d\n", v);
+  
 }

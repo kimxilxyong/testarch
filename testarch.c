@@ -21,7 +21,8 @@ int main(void) {
   printf("Unknown word size or missing size macros!\n");
 #endif
 
-  if(sizeof (void *) * CHARBIT == 64) {
+  // optimizer test
+  if(sizeof (void *) * CHAR_BIT == 64) {
     printf("Void * is 64bit\n");
   } else {
     printf("Void * is NOT 64bit\n");
